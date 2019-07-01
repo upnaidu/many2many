@@ -17,7 +17,7 @@ public class Many2manyApplication {
 
 	private static void saveUsersByName() {
 
-		final String uri = "http://localhost:8090/many2many/saveUser/user";
+		final String uri = "http://localhost:8090/many2many/saveUser/test";
 
 		RestTemplate restTemplate = new RestTemplate();
 		ResponseEntity<String> result = restTemplate.postForEntity(uri, Users.class, String.class);

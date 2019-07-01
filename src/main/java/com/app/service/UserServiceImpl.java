@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.app.model.Roles;
 import com.app.model.Users;
-import com.app.repo.RoleRepository;
 import com.app.repo.UserRepository;
 
 @Service
@@ -16,8 +15,6 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserRepository userRepository;
-	@Autowired
-	private RoleRepository roleRepository;
 
 	@Override
 	public int save(String name) {
